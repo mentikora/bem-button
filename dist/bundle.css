@@ -1,0 +1,134 @@
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Saira Extra Condensed",sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  background-color: #C0C0C0;
+}
+
+@media (max-width: 767px) {
+  body {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+
+.button {
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 0;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  white-space: nowrap;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-family: "Saira Extra Condensed",sans-serif;
+  background-color: inherit;
+  color: #000;
+  transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.button:hover,
+.button:focus {
+  outline: 0;
+  text-decoration: none;
+  color: #000;
+}
+
+.button--sm {
+  font-size: .75em;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.button--md {
+  font-size: 1em;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.button--lg {
+  font-size: 1.25em;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.button--red {
+  background-color: #f44336;
+  color: rgba(255,255,255,0.71);
+}
+
+.button--red:hover,
+.button--red:focus {
+  background-color: #ea1c0d;
+  color: #fff;
+}
+
+.button--indigo {
+  background-color: #3f51b5;
+  color: rgba(255,255,255,0.71);
+}
+
+.button--indigo:hover,
+.button--indigo:focus {
+  background-color: #32408f;
+  color: #fff;
+}
+
+.button--green {
+  background-color: #4caf50;
+  color: rgba(255,255,255,0.71);
+}
+
+.button--green:hover,
+.button--green:focus {
+  background-color: #3d8b40;
+  color: #fff;
+}
+
+.button--outline-red {
+  border: 1px solid #f44336;
+  color: rgba(0,0,0,0.71);
+}
+
+.button--outline-red:hover,
+.button--outline-red:focus {
+  background-color: #fff;
+  border-color: #fff;
+  color: #000;
+}
+
+.button--outline-indigo {
+  border: 1px solid #3f51b5;
+  color: rgba(0,0,0,0.71);
+}
+
+.button--outline-indigo:hover,
+.button--outline-indigo:focus {
+  background-color: #fff;
+  border-color: #fff;
+  color: #000;
+}
+
+.button--outline-green {
+  border: 1px solid #4caf50;
+  color: rgba(0,0,0,0.71);
+}
+
+.button--outline-green:hover,
+.button--outline-green:focus {
+  background-color: #fff;
+  border-color: #fff;
+  color: #000;
+}

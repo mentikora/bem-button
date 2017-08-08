@@ -1,0 +1,21 @@
+$font: 'Saira Extra Condensed', sans-serif;
+$color-white: #ffffff;
+$color-black: #000000 !default;
+
+$red-500: #f44336;
+$indigo-500: #3f51b5;
+$green-500: #4caf50;
+
+$button-colors:(
+	red: $red-500,
+	indigo: $indigo-500,
+	green: $green-500
+) !default;
+
+$button-color: $color-white;
+
+$button-padding-x: 10px;
+$button-padding-y: 4px;
+
+$button-transition: all .3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+

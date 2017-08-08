@@ -1,0 +1,97 @@
+.button{
+	
+	// for test
+	margin: {
+		left: 10px;
+		right: 10px;
+	}
+
+	// reset
+	border: 0;
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+  white-space: nowrap;
+  vertical-align: middle;
+	
+  text: {
+  	align: center;
+  	decoration: none;
+  	transform: uppercase;
+  }
+
+  padding: {
+  	top: $button-padding-y;
+  	bottom: $button-padding-y;
+  }
+	
+	font-family: $font;
+	background-color: inherit;
+	color: $color-black;
+
+	transition: $button-transition;
+
+	&:hover,
+	&:focus{
+		outline: 0;
+		text-decoration: none;
+		color: $color-black;
+	}
+	
+	// size small
+	&--sm{
+		font-size: .75em;
+		padding:{
+			left: $button-padding-x/2;
+			right: $button-padding-x/2;
+		}
+	}
+
+	// size medium
+	&--md{
+		font-size: 1em;
+		padding: {
+			left: $button-padding-x;
+			right: $button-padding-x;
+		}
+	}
+
+	// size large
+	&--lg{
+		font-size: 1.25em;
+		padding: {
+			left: $button-padding-x*1.5;
+			right: $button-padding-x*1.5;
+		}
+	}
+
+}
+
+@each $color, $value in $button-colors {
+  .button--#{$color} {
+    background-color: $value;
+
+    color: rgba($color-white, .71);
+
+    &:hover,
+    &:focus{
+			background-color: darken($value, 10%);
+			color: $color-white;
+    }
+  }
+}
+
+@each $color, $value in $button-colors {
+  .button--outline-#{$color} {
+    border: 1px solid $value;
+
+    color: rgba($color-black, .71);
+
+    &:hover,
+    &:focus{
+    	background-color: $color-white;
+			border-color: $color-white;
+			color: $color-black;
+    }
+  }
+}
