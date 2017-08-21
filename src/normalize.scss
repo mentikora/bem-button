@@ -11,7 +11,7 @@ body{
 	}
 
 	background: {
-		image: url('../dist/bg.jpeg');
+		image: url('../dist/snow-bg.jpg');
 		size: cover;
 		position: 50%;
 		attachment: fixed;
@@ -37,8 +37,6 @@ section{
 }
 
 .section{
-
-	box-shadow: inset 0 0 100px 0px rgba(0,0,0,1);
 
 	pre{
 		overflow:auto;
