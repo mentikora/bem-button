@@ -80,18 +80,3 @@
     }
   }
 }
-
-@each $color, $value in $button-colors {
-  .button--outline-#{$color} {
-    border: 1px solid $value;
-
-    color: rgba($color-black, .71);
-
-    &:hover,
-    &:focus{
-    	background-color: $color-white;
-			border-color: $color-white;
-			color: $color-black;
-    }
-  }
-}
